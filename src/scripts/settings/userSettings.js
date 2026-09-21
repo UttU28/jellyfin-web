@@ -402,7 +402,7 @@ export class UserSettings {
             return this.set('skipBackLength', val.toString());
         }
 
-        return parseInt(this.get('skipBackLength') || '10000', 10);
+        return 10000;
     }
 
     /**
@@ -415,7 +415,7 @@ export class UserSettings {
             return this.set('skipForwardLength', val.toString());
         }
 
-        return parseInt(this.get('skipForwardLength') || '30000', 10);
+        return 10000;
     }
 
     /**
